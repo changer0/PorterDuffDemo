@@ -9,26 +9,22 @@
 
 
     <TextView
-        android:id="@+id/title"
-        android:text="Diagrams"
+        android:id="@+id/mode"
+        android:text="Alpha compositing modes - SoureIn"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:textStyle="bold"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <ScrollView
-        app:layout_constraintTop_toBottomOf="@id/title"
+    <com.lulu.porterduffdemo.PorterDuffView
+        android:id="@+id/porter_duff_view"
+        app:layout_constraintTop_toBottomOf="@id/mode"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:id="@+id/container"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </ScrollView>
-
-
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="128dp"
+        android:layout_height="128dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
